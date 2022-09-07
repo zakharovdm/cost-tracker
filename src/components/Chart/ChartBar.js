@@ -1,9 +1,9 @@
-import "./chartBar.css";
+import "./ChartBar.css";
 
 const chartBar = (props) => {
   let fillingHeight = "0%";
 
-  if (props.max > 0) {
+  if (props.maxValue > 0) {
     fillingHeight = `${Math.round((props.value / props.maxValue) * 100)}%`;
   }
 
